@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::controller(ProductController::class)->group(function () {
-    Route::get('/', 'index')->name('products.index');
+    Route::get('/', 'index');
     Route::get('/products', 'index')->name('products.index');
 
     Route::get('/products/create', 'create')->name('products.create');
